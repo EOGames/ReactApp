@@ -5,9 +5,52 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, rgba(0,6,36,1) 0%, rgba(12,93,124,1) 52%, rgba(77,181,0,1) 100%);
+
+ 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Card
+{
+  background-color: rgb(114, 74, 33);
+  border: 5px solid rgb(221, 160, 116);
+  margin: 10px;
+  box-shadow: 5px 5px 5px #8b8b8b,-5px -5px 5px #8b8b8b;
+  text-align: center;
+}
+
+.Card:hover
+{
+  border: 5px solid skyblue;
+  transform: scale(1.05);
+}
+.center
+{
+  text-align: center;
+  text-shadow: 4px 2px 2px rgb(110, 46, 0);
+  -webkit-text-stroke: 2px chocolate;
+  /* background-color: rgba(202, 89, 8, 0.589); */
+  box-shadow: 2px 2px 5px rgb(80, 78, 78),-2px -2px 5px rgb(80, 78, 78);
+  width: 100%;
+}
+
+.searchBox
+{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
 }

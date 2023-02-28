@@ -4,6 +4,7 @@ import React from 'react';
 // import { robots } from './robots';
 import SearchBox from './SearchBox';
 import Scroll from './Scroll.js';
+import ErrorBoundary from './ErrorBoundary';
 
 class App extends React.Component {
 
@@ -49,10 +50,13 @@ class App extends React.Component {
         <h1 className='center'>Robots</h1>
         <SearchBox className =".searchBox" searchChange ={this.onSearchChange} />
             <Scroll>
+              <ErrorBoundary>
            <div className="App">
              <CardList robots = {fillteredList} />
             </div>
+              </ErrorBoundary>
              </Scroll>
+
            
     </div>
      );
